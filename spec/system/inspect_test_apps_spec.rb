@@ -5,7 +5,6 @@ RSpec.describe "InspectTestApps", type: :system do
     driven_by(:rack_test)
   end
 
-  # Checks to make sure new books are added successfully
   it 'adding a new book' do
     visit '/books/new'
     fill_in 'Title', with: 'Hello!'
